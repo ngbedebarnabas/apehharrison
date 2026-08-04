@@ -1,0 +1,1 @@
+export function QuotePlate({quote,author,role}:{quote:string;author:string;role:string}){return <figure className="quote"><b>“</b><blockquote>{quote}</blockquote><figcaption>{author}<small>{role}</small></figcaption></figure>}

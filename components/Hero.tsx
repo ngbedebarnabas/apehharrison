@@ -1,3 +1,38 @@
-import Link from 'next/link';
-import Image from 'next/image';
-export function Hero(){return <section className="hero"><div className="hero-image"><Image src="/images/apeh-harrison-hero.jpg" alt="Apeh Harrison Iwodi" fill priority sizes="100vw" /></div><div className="hero-shade"/><div className="hero-content"><p className="eyebrow">TRANS­GENERATIONAL LEADER · ARCHITECT · AUTHOR</p><h1>APEH<br/><em>HARRISON.</em></h1><div className="hero-bottom"><p>Building people, purpose,<br/>and posterity.</p><Link className="button gold" href="/contact">Let’s Connect <span>↗</span></Link></div></div></section>}
+import Link from "next/link";
+import Image from "next/image";
+export function Hero() {
+  return (
+    <section className="hero">
+      <div className="hero-image">
+        <Image
+          src="/images/apeh-harrison-hero.jpg"
+          alt="Apeh Harrison Iwodi"
+          fill
+          priority
+          sizes="100vw"
+        />
+      </div>
+      <div className="hero-shade" />
+      <div className="hero-content">
+        <p className="eyebrow">
+          TRANS­GENERATIONAL LEADER · ARCHITECT · AUTHOR
+        </p>
+        <h1>
+          APEH
+          <br />
+          <em>HARRISON</em>
+        </h1>
+        <div className="hero-bottom">
+          <p>
+            Building people, purpose,
+            <br />
+            and posterity.
+          </p>
+          <Link className="button gold" href="/contact">
+            Let’s Connect <span>↗</span>
+          </Link>
+        </div>
+      </div>
+    </section>
+  );
+}

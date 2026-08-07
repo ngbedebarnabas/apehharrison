@@ -28,7 +28,8 @@ export default function Home() {
             <p>
               Architect, author, educator and mentor, he brings the discipline
               of design to the work of human potential. His conviction is
-              simple: every life can become a blueprint for lasting impact.
+              simple: every life can become a blueprint for lasting impact and
+              greatness.
             </p>
             <Link className="button ghost" href="/about">
               Read Full Story <span>↗</span>
@@ -38,7 +39,7 @@ export default function Home() {
       </section>
       <section className="band paper">
         <div className="wrap">
-          <p className="eyebrow dark-label">[THE WORK BEHIND THE WORK]</p>
+          <p className="eyebrow dark-label">[THE DRIVE BEHIND THE WORK]</p>
           <h2 className="section-title">
             The principles that
             <br />

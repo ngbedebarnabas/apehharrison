@@ -1,2 +1,31 @@
-import Link from 'next/link'; import { articles } from '@/lib/content';
-export default function Insights(){return <main><section className="inner-hero compact"><p className="eyebrow">[INSIGHTS]</p><h1>A library of<br/><em>considered thought.</em></h1><p className="lead">Notes on leadership, legacy and the quiet work of becoming more useful to the world.</p></section><section className="band paper"><div className="wrap article-grid">{articles.map(a=><article className="article" key={a.slug}><p>{a.category}<span>{a.date}</span></p><h2>{a.title}</h2><div><p>{a.text}</p><Link href={`/insights/${a.slug}`}>Read insight ↗</Link></div></article>)}</div></section></main>}
+import { ArticleCard } from '@/components/ArticleCard';
+import { Reveal } from '@/components/motion/Reveal';
+import { RevealGroup } from '@/components/motion/RevealGroup';
+import { articles } from '@/lib/content';
+
+export default function Insights() {
+  return (
+    <main>
+      <section className="inner-hero compact">
+        <Reveal>
+          <p className="eyebrow">[INSIGHTS]</p>
+          <h1>
+            A library of
+            <br />
+            <em>considered thought.</em>
+          </h1>
+          <p className="lead">
+            Notes on leadership, legacy and the quiet work of becoming more useful to the world.
+          </p>
+        </Reveal>
+      </section>
+      <section className="band paper">
+        <RevealGroup className="wrap article-grid">
+          {articles.map((a) => (
+            <ArticleCard key={a.slug} {...a} />
+          ))}
+        </RevealGroup>
+      </section>
+    </main>
+  );
+}

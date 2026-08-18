@@ -1,32 +1,37 @@
+'use client';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+import { hoverLift, revealItem } from '@/lib/motion';
+
 export function BookCard({
   title,
   format,
   price,
   text,
-  cover,
+  image,
+  link,
 }: {
   title: string;
   format: string;
   price: string;
   text: string;
-  cover: string;
+  image: string;
+  link: string;
 }) {
   return (
-    <article className="book">
-      <div className={"cover " + (cover === "PP" ? "cover-red" : "")}>
-        <span>{cover === "PP" ? "PROBLEM" : "UNCOMMON"}</span>
-        <strong>{cover === "PP" ? "POWER" : "COMMON SENSE"}</strong>
-        <small>APEH HARRISON IWODI</small>
+    <motion.article className="book" variants={revealItem} whileHover={hoverLift.whileHover} transition={hoverLift.transition}>
+      <div className="cover">
+        <Image src={image} alt={title} fill sizes="(max-width: 900px) 100vw, 33vw" />
       </div>
       <p className="book-format">{format}</p>
       <h3>{title}</h3>
       <p>{text}</p>
       <div className="book-buy">
         <strong>{price}</strong>
-        <a href="https://selar.com" target="_blank">
-          Buy Now ↗
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          Buy Now →
         </a>
       </div>
-    </article>
+    </motion.article>
   );
 }

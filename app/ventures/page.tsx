@@ -1,13 +1,24 @@
+import Image from 'next/image';
 import { VentureCard } from '@/components/VentureCard';
 import { Reveal } from '@/components/motion/Reveal';
 import { RevealGroup } from '@/components/motion/RevealGroup';
-import { ventures } from '@/lib/content';
+import { ventures, venturesHero } from '@/lib/content';
 
 export default function Legacy() {
   return (
     <main>
-      <section className="inner-hero compact">
-        <Reveal>
+      <section className="inner-hero compact has-bg">
+        <div className="inner-hero-bg">
+          <Image
+            src={venturesHero.src}
+            alt={venturesHero.alt}
+            fill
+            sizes="100vw"
+            priority
+            style={{ objectPosition: venturesHero.position }}
+          />
+        </div>
+        <Reveal className="inner-hero-content">
           <p className="eyebrow">[THE LEGACY]</p>
           <h1>
             Build what

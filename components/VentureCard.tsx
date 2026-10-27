@@ -35,7 +35,7 @@ export function VentureCard({
       <span className="rule" />
       <div className="venture-body">
         <p>{text}</p>
-        <Link href={`/legacy/${slug}`}>View Project →</Link>
+        <Link href={`/ventures/${slug}`}>View Project →</Link>
       </div>
     </motion.article>
   );

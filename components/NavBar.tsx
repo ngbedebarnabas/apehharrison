@@ -7,10 +7,9 @@ import { easeOut } from '@/lib/motion';
 
 const links = [
   ['About', '/about'],
-  ['Legacy', '/legacy'],
+  ['Ventures', '/ventures'],
   ['Books', '/books'],
-  ['Speaking', '/speaking'],
-  ['Insights', '/insights'],
+  ['Keynotes', '/keynotes'],
 ];
 
 export function NavBar() {

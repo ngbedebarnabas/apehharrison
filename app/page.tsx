@@ -82,7 +82,7 @@ export default function Home() {
                 <br />a human centre.
               </h2>
             </div>
-            <Link className="text-link" href="/legacy">
+            <Link className="text-link" href="/ventures">
               View all offerings →
             </Link>
           </Reveal>

@@ -20,9 +20,9 @@ export default function Contact() {
             <p className="eyebrow dark-label">[GET IN TOUCH]</p>
             <h2>Write to us.</h2>
             <p>
-              hello@archarrison.com
+              info@apehharrison.com
               <br />
-              +234 800 000 0000
+              +234 807 946 7653
               <br />
               Abuja, Nigeria
             </p>

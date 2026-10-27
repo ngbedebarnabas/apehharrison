@@ -8,14 +8,14 @@ export function Footer() {
         <div>
           <p className="footer-label">QUICK LINKS</p>
           <Link href="/about">About</Link>
-          <Link href="/legacy">Legacy</Link>
-          <Link href="/speaking">Speaking</Link>
+          <Link href="/ventures">Ventures</Link>
+          <Link href="/keynotes">Keynotes</Link>
         </div>
         <div>
           <p className="footer-label">VENTURES</p>
-          <Link href="/legacy/minds-and-lines">Minds and Lines</Link>
-          <Link href="/legacy/purple-network">Purple Network</Link>
-          <Link href="/legacy/minds-craft">Minds Craft</Link>
+          <Link href="/ventures/minds-and-lines">Minds and Lines</Link>
+          <Link href="/ventures/purple-network">Purple Network</Link>
+          <Link href="/ventures/minds-craft">Minds Craft</Link>
         </div>
         <div>
           <p className="footer-label">BOOKS</p>
@@ -25,8 +25,8 @@ export function Footer() {
         </div>
         <div>
           <p className="footer-label">CONNECT</p>
-          <a href="mailto:hello@archarrison.com">hello@archarrison.com</a>
-          <a href="tel:+2348000000000">+234 800 000 0000</a>
+          <a href="mailto:info@apehharrison.com">info@apehharrison.com</a>
+          <a href="tel:+2348079467653">+234 807 946 7653</a>
           <Link href="/contact">Begin a conversation →</Link>
         </div>
       </div>

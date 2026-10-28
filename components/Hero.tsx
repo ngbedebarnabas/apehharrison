@@ -53,8 +53,8 @@ export function Hero() {
             <br />
             and posterity.
           </p>
-          <Link className="button gold" href="/contact">
-            Let’s Connect <span>→</span>
+          <Link className="button gold" href="/about">
+            About Apeh Harrison <span>→</span>
           </Link>
         </motion.div>
       </motion.div>
